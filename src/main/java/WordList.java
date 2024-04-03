@@ -11,17 +11,17 @@ public class WordList
   public int numWordsOfLength(int len)
   {
     int sum = 0;
-    for(int i = 0; i < numWordsOfLength.length; i++)
-        if(numWordsOfLength[i].length.equals(len))
+    for(int i = 0; i < myList.length; i++)
+        if(myList[i].length.equals(len))
             sum++;
     return sum;
   }
 
   public void removeWordsOfLength(int len)
   {
-    for(int i = 0; i< numWordsOfLength.length; i++)
-        if(numWordsOfLength[i].length.equals(len))
-          numWordsOfLength.remove(i);
-    return numWordsOfLength;
+    for(int i = 0; i< myList.length; i++)
+        if(myList[i].length.equals(len))
+          myList.remove(i);
+    return myList;
   }
 }
